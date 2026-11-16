@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concrete — Retail task platform case study</title>
+<meta name="description" content="Isabela Razetti — Staff Product Designer. Design systems, product strategy and cross-functional leadership for B2B, SaaS and developer products.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&amp;family=Nunito+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F2ECE2}
+a{color:#1F1B16}a:hover{color:#B83D17}
+.next .t{transition:color .3s cubic-bezier(.4,0,.2,1)}.next:hover .t{color:#B83D17}
+.nav a{transition:opacity .3s}.nav a:hover{opacity:.6;color:#1F1B16}
+@keyframes cc1{0.000%{opacity:0;}15.909%{opacity:0;}17.727%{opacity:1;}27.273%{opacity:1;}29.091%{opacity:0;}100.000%{opacity:0;}}
+@keyframes cc2{0.000%{opacity:0;}50.000%{opacity:0;}51.818%{opacity:1;}98.182%{opacity:1;}100.000%{opacity:0;}100.000%{opacity:0;}}
+@keyframes cc3{0.000%{opacity:0;}49.545%{opacity:0;}50.909%{opacity:1;}98.182%{opacity:1;}99.545%{opacity:0;}100.000%{opacity:0;}}
+@keyframes cc4{0.000%{opacity:0;}50.000%{opacity:0;}51.818%{opacity:1;}98.182%{opacity:1;}100.000%{opacity:0;}100.000%{opacity:0;}}
+@keyframes cc5{0.000%{opacity:0;transform:translateY(1.5%)}26.364%{opacity:0;transform:translateY(1.5%);animation-timing-function:cubic-bezier(.2,.8,.2,1)}30.455%{opacity:1;transform:none}89.091%{opacity:1;transform:none}94.545%{opacity:0}100.000%{opacity:0;transform:translateY(1.5%)}}
+@keyframes cc6{0.000%{transform:translate(0.000%,0.000%) scale(1);animation-timing-function:cubic-bezier(.65,0,.35,1)}7.273%{transform:translate(0.000%,0.000%) scale(1);animation-timing-function:cubic-bezier(.65,0,.35,1)}14.545%{transform:translate(-0.635%,-23.681%) scale(1.25);animation-timing-function:cubic-bezier(.65,0,.35,1)}24.545%{transform:translate(-0.635%,-23.681%) scale(1.25);animation-timing-function:cubic-bezier(.65,0,.35,1)}30.000%{transform:translate(0.000%,0.000%) scale(1);animation-timing-function:cubic-bezier(.65,0,.35,1)}33.636%{transform:translate(0.000%,0.000%) scale(1);animation-timing-function:cubic-bezier(.65,0,.35,1)}40.000%{transform:translate(-28.000%,0.000%) scale(1.28);animation-timing-function:cubic-bezier(.65,0,.35,1)}79.091%{transform:translate(-28.000%,0.000%) scale(1.28);animation-timing-function:cubic-bezier(.65,0,.35,1)}86.364%{transform:translate(0.000%,0.000%) scale(1);animation-timing-function:cubic-bezier(.65,0,.35,1)}100.000%{transform:translate(0.000%,0.000%) scale(1);animation-timing-function:cubic-bezier(.65,0,.35,1)}}
+@keyframes cc7{0.000%{left:66.4062cqw;top:27.3438cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}8.182%{left:66.4062cqw;top:27.3438cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}15.455%{left:40.6250cqw;top:50.7812cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}24.545%{left:40.6250cqw;top:50.7812cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}32.727%{left:58.5938cqw;top:44.9219cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}46.364%{left:71.6797cqw;top:35.3906cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}50.000%{left:71.6797cqw;top:35.3906cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}57.273%{left:83.9844cqw;top:44.9219cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}86.364%{left:83.9844cqw;top:44.9219cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}95.455%{left:66.4062cqw;top:27.3438cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}100.000%{left:66.4062cqw;top:27.3438cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}}
+@keyframes cc8{0.000%{opacity:0;transform:translate(-50%,-50%) scale(.2)}23.627%{opacity:0;transform:translate(-50%,-50%) scale(.2)}23.636%{opacity:.5;transform:translate(-50%,-50%) scale(.2);animation-timing-function:ease-out}27.091%{opacity:0;transform:translate(-50%,-50%) scale(1.6)}49.082%{opacity:0;transform:translate(-50%,-50%) scale(.2)}49.091%{opacity:.5;transform:translate(-50%,-50%) scale(.2);animation-timing-function:ease-out}52.545%{opacity:0;transform:translate(-50%,-50%) scale(1.6)}100.000%{opacity:0;transform:translate(-50%,-50%) scale(.2)}}
+@keyframes cc9{0.000%{transform:scale(1)}22.909%{transform:scale(1)}23.636%{transform:scale(.82)}24.727%{transform:scale(1)}48.364%{transform:scale(1)}49.091%{transform:scale(.82)}50.182%{transform:scale(1)}100.000%{transform:scale(1)}}
+.cch{position:relative;aspect-ratio:2560/2236;container-type:inline-size;overflow:hidden;border-radius:10px;background:#F4F5F9;box-shadow:0 1px 2px rgba(31,27,22,.08),0 12px 32px rgba(31,27,22,.12)}
+.cc-dt{opacity:0}
+@media (prefers-reduced-motion:no-preference){.cc1{animation:cc1 11s infinite both}.cc2{animation:cc2 11s infinite both}.cc3{animation:cc3 11s infinite both}.cc4{animation:cc4 11s infinite both}.cc5{animation:cc5 11s infinite both}.cc6{animation:cc6 11s infinite both}.cc7{animation:cc7 11s infinite both}.cc8{animation:cc8 11s infinite both}.cc9{animation:cc9 11s infinite both}}
+@media (prefers-reduced-motion:reduce){.cc-cursor,.cc-rmh{display:none}.cc-dt{opacity:1}}
+@keyframes sg1{0.000%{opacity:1;transform:none}20.000%{opacity:1;transform:none}21.000%{opacity:0;transform:none}99.000%{opacity:0;transform:translateY(2.5%);animation-timing-function:cubic-bezier(.2,.8,.2,1)}100.000%{opacity:1;transform:none}}
+@keyframes sg2{0.000%{opacity:0}20.000%{opacity:0}21.250%{opacity:1}99.000%{opacity:1}100.250%{opacity:0}100.000%{opacity:0}}
+@keyframes sg3{0.000%{opacity:0;transform:translateY(4%)}20.000%{opacity:0;transform:translateY(4%);animation-timing-function:cubic-bezier(.2,.8,.2,1)}22.750%{opacity:1;transform:none}39.000%{opacity:1;transform:none}40.000%{opacity:0;transform:none}100.000%{opacity:0;transform:translateY(4%)}}
+@keyframes sg4{0.000%{opacity:0}39.000%{opacity:0}40.250%{opacity:1}99.000%{opacity:1}100.250%{opacity:0}100.000%{opacity:0}}
+@keyframes sg5{0.000%{opacity:0;transform:translateY(2.5%)}39.000%{opacity:0;transform:translateY(2.5%);animation-timing-function:cubic-bezier(.2,.8,.2,1)}41.750%{opacity:1;transform:none}59.000%{opacity:1;transform:none}60.000%{opacity:0;transform:none}100.000%{opacity:0;transform:translateY(2.5%)}}
+@keyframes sg6{0.000%{opacity:0}59.000%{opacity:0}60.250%{opacity:1}99.000%{opacity:1}100.250%{opacity:0}100.000%{opacity:0}}
+@keyframes sg7{0.000%{opacity:0;transform:translateY(2.5%)}59.000%{opacity:0;transform:translateY(2.5%);animation-timing-function:cubic-bezier(.2,.8,.2,1)}61.750%{opacity:1;transform:none}79.000%{opacity:1;transform:none}80.000%{opacity:0;transform:none}100.000%{opacity:0;transform:translateY(2.5%)}}
+@keyframes sg8{0.000%{opacity:0}79.000%{opacity:0}80.250%{opacity:1}99.000%{opacity:1}100.250%{opacity:0}100.000%{opacity:0}}
+@keyframes sg9{0.000%{opacity:0;transform:translateY(2.5%)}79.000%{opacity:0;transform:translateY(2.5%);animation-timing-function:cubic-bezier(.2,.8,.2,1)}81.750%{opacity:1;transform:none}99.000%{opacity:1;transform:none}100.000%{opacity:0;transform:none}100.000%{opacity:0;transform:translateY(2.5%)}}
+@keyframes sg10{0.000%{left:6.9444cqw;top:25.9028cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}1.500%{left:6.9444cqw;top:25.9028cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}6.000%{left:52.0833cqw;top:38.1944cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}34.500%{left:52.0833cqw;top:38.1944cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}38.000%{left:7.1181cqw;top:28.7153cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}39.000%{left:7.1181cqw;top:28.7153cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}43.500%{left:55.5556cqw;top:34.7222cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}55.500%{left:55.5556cqw;top:34.7222cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}58.000%{left:6.0764cqw;top:31.4931cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}59.000%{left:6.0764cqw;top:31.4931cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}63.500%{left:55.5556cqw;top:36.4583cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}75.500%{left:55.5556cqw;top:36.4583cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}78.000%{left:6.4236cqw;top:40.1736cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}79.000%{left:6.4236cqw;top:40.1736cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}83.500%{left:57.2917cqw;top:36.4583cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}95.500%{left:57.2917cqw;top:36.4583cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}98.000%{left:6.9444cqw;top:25.9028cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}100.000%{left:6.9444cqw;top:25.9028cqw;animation-timing-function:cubic-bezier(.65,0,.35,1)}}
+@keyframes sg11{0.000%{opacity:0;transform:translate(-50%,-50%) scale(.2)}38.495%{opacity:0;transform:translate(-50%,-50%) scale(.2)}38.500%{opacity:.45;transform:translate(-50%,-50%) scale(.2);animation-timing-function:ease-out}40.400%{opacity:0;transform:translate(-50%,-50%) scale(1.6)}58.495%{opacity:0;transform:translate(-50%,-50%) scale(.2)}58.500%{opacity:.45;transform:translate(-50%,-50%) scale(.2);animation-timing-function:ease-out}60.400%{opacity:0;transform:translate(-50%,-50%) scale(1.6)}78.495%{opacity:0;transform:translate(-50%,-50%) scale(.2)}78.500%{opacity:.45;transform:translate(-50%,-50%) scale(.2);animation-timing-function:ease-out}80.400%{opacity:0;transform:translate(-50%,-50%) scale(1.6)}98.495%{opacity:0;transform:translate(-50%,-50%) scale(.2)}98.500%{opacity:.45;transform:translate(-50%,-50%) scale(.2);animation-timing-function:ease-out}100.000%{opacity:0;transform:translate(-50%,-50%) scale(1.6)}}
+@keyframes sg12{0.000%{transform:scale(1)}38.100%{transform:scale(1)}38.500%{transform:scale(.82)}39.100%{transform:scale(1)}58.100%{transform:scale(1)}58.500%{transform:scale(.82)}59.100%{transform:scale(1)}78.100%{transform:scale(1)}78.500%{transform:scale(.82)}79.100%{transform:scale(1)}98.100%{transform:scale(1)}98.500%{transform:scale(.82)}99.100%{transform:scale(1)}100.000%{transform:scale(1)}}
+.sgm{position:relative;aspect-ratio:2880/2048;container-type:inline-size;overflow:hidden;border-radius:10px;background:#fff;box-shadow:0 1px 2px rgba(31,27,22,.08),0 12px 32px rgba(31,27,22,.12)}
+@media (prefers-reduced-motion:no-preference){.sg1{animation:sg1 20s infinite both}.sg2{animation:sg2 20s infinite both}.sg3{animation:sg3 20s infinite both}.sg4{animation:sg4 20s infinite both}.sg5{animation:sg5 20s infinite both}.sg6{animation:sg6 20s infinite both}.sg7{animation:sg7 20s infinite both}.sg8{animation:sg8 20s infinite both}.sg9{animation:sg9 20s infinite both}.sg10{animation:sg10 20s infinite both}.sg11{animation:sg11 20s infinite both}.sg12{animation:sg12 20s infinite both}}
+@media (prefers-reduced-motion:reduce){.sg-cursor{display:none}}
+</style>
+<style>
+html{scroll-behavior:smooth}
+.rp-it .ck{display:none}.rp-it.sel .ck{display:block}
+@media (max-width:640px){header.nav{padding:20px!important} header.nav nav{gap:16px!important}}
+</style>
+</head>
+<body>
+<div style="background: #F2ECE2; color: #1F1B16; font-family: 'Inter', -apple-system, system-ui, sans-serif; -webkit-font-smoothing: antialiased">
+
+<header class="nav" style="position: fixed; top: 0; left: 0; right: 0; z-index: 10; display: flex; justify-content: space-between; align-items: flex-start; padding: 32px; pointer-events: none">
+  <a href="index.html" style="pointer-events: auto; font-size: 14px; font-weight: 500; text-decoration: none; color: #B83D17; padding: 4px 0">I—R</a>
+  <nav aria-label="Main" style="pointer-events: auto; display: flex; gap: 28px; font-size: 14px; font-weight: 500">
+    <a href="index.html#work" style="text-decoration: none; padding: 4px 0">Work</a>
+    <a href="index.html#about" style="text-decoration: none; padding: 4px 0">About</a>
+    <a href="index.html#contact" style="text-decoration: none; padding: 4px 0">Contact</a>
+  </nav>
+</header>
+
+<main style="max-width: 1064px; margin: 0 auto; padding: 140px 32px 100px; box-sizing: border-box; display: flex; flex-direction: column; gap: 96px">
+
+  <header style="display: flex; flex-direction: column; gap: 16px">
+    <a href="index.html#work" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; text-decoration: none; color: #5E554A; padding: 4px 0; margin-bottom: 16px">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M7 3.5L2.5 8 7 12.5M2.5 8h11" stroke="currentColor" stroke-width="1.4"/></svg>Back
+    </a>
+    <p style="margin: 0; font-size: 14px; color: #5E554A">Senior Product Designer • B2B • 2018–2019</p>
+    <h1 style="margin: 0; font-weight: 600; font-size: clamp(56px, 8vw, 200px); line-height: 0.9; letter-spacing: -0.03em; text-transform: uppercase">Concrete</h1>
+    <p style="margin: 16px 0 0; max-width: 672px; font-size: 24px; line-height: 1.35; color: #5E554A">A B2B retail task platform connecting head office, regional managers and store teams — redesigned across <span style="color: #1F1B16; font-weight: 600">tablet and desktop</span>.</p>
+  </header>
+
+  <figure style="margin: -32px 0 0; display: flex; flex-direction: column; gap: 12px">
+    <div class="cch" role="img" aria-label="Animated walkthrough of Concrete: from the task overview a manager opens a task awaiting approval and approves the store’s submission"><div class="cc-stage cc6" style="position:absolute;inset:0;transform-origin:0 0"><img src="assets/630c7791.jpg" alt="" style="position:absolute;left:0;top:0;width:100%;height:auto;display:block"><div class="cc-rmh cc1" style="position:absolute;left:29.7656cqw;top:41.9531cqw;width:21.4844cqw;height:19.0625cqw;box-shadow:0 0 0 0.1172cqw #1A4FA8,0 0.3906cqw 1.1719cqw rgba(72,89,119,.18)"></div><div class="cc5 cc-dt" style="position:absolute;inset:0;background:#F4F5F9"><img src="assets/fc573fb0.jpg" alt="" style="position:absolute;left:0;top:0;width:100%;height:auto;display:block"><div class="cc-rmh cc2" style="position:absolute;left:60.3061cqw;top:18.6735cqw;width:12.2768cqw;height:1.5306cqw;background:#fff;font-family:'Avenir Next',Avenir,'Nunito Sans',system-ui,sans-serif;font-size:1.2891cqw;color:#2E7D32;font-weight:500;display:flex;align-items:center;gap:0.3906cqw"><svg viewBox="0 0 16 16" style="width:1.1719cqw;height:1.1719cqw"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="#2E7D32" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Approved</div><div class="cc-rmh cc3" style="position:absolute;left:67.3980cqw;top:34.0306cqw;width:8.0102cqw;height:2.7041cqw;border-radius:1.5625cqw;background:#95C494;color:#fff;font-family:'Avenir Next',Avenir,'Nunito Sans',system-ui,sans-serif;font-size:1.1719cqw;display:flex;align-items:center;justify-content:center;gap:0.3906cqw;font-weight:500"><svg viewBox="0 0 16 16" style="width:1.0156cqw;height:1.0156cqw"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Approved</div><div class="cc-rmh cc4" style="position:absolute;left:76.5816cqw;top:33.9796cqw;width:12.2449cqw;height:2.8061cqw;background:rgba(255,255,255,.65)"></div></div><div class="cc-cursor cc7" style="position:absolute;left:66.4062cqw;top:27.3438cqw;width:1.5625cqw;z-index:3"><div class="cc8" style="position:absolute;left:10%;top:5%;width:2.7344cqw;height:2.7344cqw;border-radius:50%;background:#1A4FA8;opacity:0"></div><svg class="cc9" viewBox="0 0 20 24" style="display:block;width:100%;height:auto;transform-origin:10% 5%"><path d="M2 1.5v18.2l4.6-4.4 3 6.8 3-1.3-3-6.7h6.4L2 1.5z" fill="#1F2A44" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/></svg></div></div></div>
+    <figcaption style="font-size: 14px; color: #5E554A">From the task overview to approving a store’s work — managers review uploads and approve in a couple of clicks.</figcaption>
+  </figure>
+
+  <div style="margin-top: -48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; align-items: start">
+    <figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+      <a href="assets/4aba82b2.jpg" target="_blank" rel="noopener" style="display: block"><img src="assets/64f1f052.png" alt="Task detail with a breakdown of progress by region, area and store, each with its status and actions" style="display: block; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 1px 2px rgba(31,27,22,0.08), 0 8px 24px rgba(31,27,22,0.10)"></a>
+      <figcaption style="font-size: 14px; line-height: 1.5; color: #5E554A"><span style="font-weight: 600; color: #1F1B16">Task breakdown</span> — progress by region, area and store.</figcaption>
+    </figure>
+    <figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+      <a href="assets/27be6edb.jpg" target="_blank" rel="noopener" style="display: block"><img src="assets/593d3c95.png" alt="Create new task form with title, description, attachments, approvers, assigned stores, category, size and dates" style="display: block; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 1px 2px rgba(31,27,22,0.08), 0 8px 24px rgba(31,27,22,0.10)"></a>
+      <figcaption style="font-size: 14px; line-height: 1.5; color: #5E554A"><span style="font-weight: 600; color: #1F1B16">Create new task</span> — managers can create tasks, set approvers and assign stores.</figcaption>
+    </figure>
+  </div>
+
+  <section style="display: flex; flex-direction: column; gap: 24px">
+    <h2 style="margin: 0; font-size: 14px; font-weight: 500; color: #5E554A">Overview</h2>
+    <p style="margin: 0; font-size: 18px; line-height: 1.6; color: rgba(31,27,22,0.85)">Concrete is a retail task management platform connecting head office, regional and district managers with store teams. I led the end-to-end UX/UI redesign, creating a consistent experience across the organisation.</p>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 24px">
+    <h2 style="margin: 0; font-size: 14px; font-weight: 500; color: #5E554A">The challenge</h2>
+    <p style="margin: 0; font-size: 18px; line-height: 1.6; color: rgba(31,27,22,0.85)">The product lacked a visual identity, design system and consistent user flows. Store teams struggled to find and prioritise tasks, while managers couldn’t create tasks or announcements directly from the dashboard. The tablet experience, the primary device used in stores, was broken.</p>
+  </section>
+
+  <blockquote style="margin: 0; text-align: center; font-weight: 600; font-size: clamp(30px, 3.6vw, 48px); line-height: 1.05; letter-spacing: -0.03em; text-wrap: balance">“Balance what customers need with what the business needs.”</blockquote>
+
+  <section style="display: flex; flex-direction: column; gap: 24px">
+    <h2 style="margin: 0; font-size: 14px; font-weight: 500; color: #5E554A">My role</h2>
+    <p style="margin: 0; font-size: 18px; line-height: 1.6; color: rgba(31,27,22,0.85)">I shaped the product direction with the Product Manager and Chief Product Officer, balancing customer needs and business goals through an MVP approach.</p>
+    <p style="margin: 0; font-size: 18px; line-height: 1.6; color: rgba(31,27,22,0.85)">I aligned executives and stakeholders around the vision, partnered with 6 developers to deliver it, and redesigned core workflows across desktop, tablet and mobile. I validated the experience with HQ and store managers in the UK and US.</p>
+    <p style="margin: 0; font-size: 18px; line-height: 1.6; color: rgba(31,27,22,0.85)">I also created Concrete’s brand identity and design system from scratch, covering colour, typography, iconography, components and a responsive grid.</p>
+  </section>
+
+  <figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+    <div class="sgm" role="img" aria-label="Animated tour of the Concrete Platform styleguide: primary and secondary colours, status colours, typography, icons and form components"><img class="" src="assets/74b2fa9f.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;display:block;clip-path:inset(0 74.69% 0 0)"><div class="sg1" style="position:absolute;inset:0"><img class="" src="assets/74b2fa9f.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;display:block;clip-path:inset(0 0 0 25.31%)"></div><div class="sg2" style="position:absolute;inset:0"><img class="" src="assets/9b1cd5fd.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;display:block;clip-path:inset(0 74.69% 0 0)"></div><div class="sg3" style="position:absolute;inset:0"><img class="" src="assets/9b1cd5fd.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;display:block;clip-path:inset(0 0 0 25.31%)"></div><div class="sg4" style="position:absolute;inset:0"><img class="" src="assets/23563684.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;display:block;clip-path:inset(0 74.69% 0 0)"></div><div class="sg5" style="position:absolute;inset:0"><img class="" src="assets/23563684.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;display:block;clip-path:inset(0 0 0 25.31%)"></div><div class="sg6" style="position:absolute;inset:0"><img class="" src="assets/aa8cc0b3.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;display:block;clip-path:inset(0 74.69% 0 0)"></div><div class="sg7" style="position:absolute;inset:0"><img class="" src="assets/aa8cc0b3.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;display:block;clip-path:inset(0 0 0 25.31%)"></div><div class="sg8" style="position:absolute;inset:0"><img class="" src="assets/c123fddc.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;display:block;clip-path:inset(0 74.69% 0 0)"></div><div class="sg9" style="position:absolute;inset:0"><img class="" src="assets/c123fddc.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;display:block;clip-path:inset(0 0 0 25.31%)"></div><div class="sg-cursor sg10" style="position:absolute;left:6.9444cqw;top:25.9028cqw;width:1.3889cqw;z-index:3"><div class="sg11" style="position:absolute;left:10%;top:5%;width:2.4306cqw;height:2.4306cqw;border-radius:50%;background:#1E54A9;opacity:0"></div><svg class="sg12" viewBox="0 0 20 24" style="display:block;width:100%;height:auto;transform-origin:10% 5%"><path d="M2 1.5v18.2l4.6-4.4 3 6.8 3-1.3-3-6.7h6.4L2 1.5z" fill="#1F2A44" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/></svg></div></div>
+    <figcaption style="font-size: 14px; color: #5E554A">The Concrete Platform styleguide — colours, typography, icons and form components, built from scratch.</figcaption>
+  </figure>
+
+  <section style="background: #1F1B16; color: #F2ECE2; border-radius: 4px; padding: 56px 48px">
+    <h2 style="margin: 0 0 36px; font-size: 14px; font-weight: 500; color: #BFB3A2">Impact</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 32px">
+      <div><div style="font-weight: 600; font-size: 60px; line-height: 1; letter-spacing: -0.03em">0 → 1</div><p style="margin: 10px 0 0; font-size: 15px; color: #CFC4B4"><span style="color: #F2ECE2; font-weight: 500">Built from scratch</span><br>New product and design system</p></div>
+      <div><div style="font-weight: 600; font-size: 60px; line-height: 1; letter-spacing: -0.03em">2</div><p style="margin: 10px 0 0; font-size: 15px; color: #CFC4B4"><span style="color: #F2ECE2; font-weight: 500">Devices</span><br>Unified desktop and tablet</p></div>
+      <div><div style="font-weight: 600; font-size: 60px; line-height: 1; letter-spacing: -0.03em">Scale</div><p style="margin: 10px 0 0; font-size: 15px; color: #CFC4B4"><span style="color: #F2ECE2; font-weight: 500">Growing adoption</span><br>Stores continued growing on the new experience</p></div>
+    </div>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 24px">
+    <h2 style="margin: 0; font-size: 14px; font-weight: 500; color: #5E554A">Reflection</h2>
+    <p style="margin: 0; font-size: 18px; line-height: 1.6; color: rgba(31,27,22,0.85)">This project reinforced the importance of building strong foundations before scaling a product.</p>
+    <p style="margin: 0; font-size: 18px; line-height: 1.6; color: rgba(31,27,22,0.85)">Working closely with Product, Engineering and stakeholders taught me how to balance business goals with real user needs, while bringing everyone together around a shared vision.</p>
+    <p style="margin: 8px 0 0; font-weight: 600; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.3; letter-spacing: -0.015em; text-wrap: balance">I’m particularly proud of creating a product experience and design system from scratch, designed to grow alongside the business.</p>
+    <p style="margin: 0; font-size: 14px; color: #5E554A"><a href="mailto:razetti.isa@gmail.com?subject=Full%20case%20study%20%E2%80%94%20Concrete">Ask me for the full case study</a>.</p>
+  </section>
+
+  <a class="next" href="twilio.html" style="text-decoration: none; color: #1F1B16; border-top: 1px solid rgba(31,27,22,0.15); padding-top: 48px; display: flex; flex-direction: column; gap: 12px">
+    <span style="font-size: 14px; color: #5E554A">Next Project · 01</span>
+    <span class="t" style="font-weight: 600; font-size: clamp(40px, 4.4vw, 72px); line-height: 1; letter-spacing: -0.03em; text-transform: uppercase">Twilio</span>
+  </a>
+
+  <footer style="font-size: 14px; line-height: 20px; color: #5E554A">
+    <div>© Isabela Razetti</div>
+    <div>Made in Barcelona</div>
+  </footer>
+
+</main>
+</div>
+</body>
+</html>
