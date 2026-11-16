@@ -80,9 +80,12 @@ a{color:#1F1B16}a:hover{color:#B83D17}
 .nv .us{animation:nv-us 10s infinite both}.nv .mA{animation:nv-menuA 10s infinite both}.nv .mB{animation:nv-menuB 10s infinite both}.nv .mA .hov{animation:nv-hovA 10s infinite both}.nv .mB .hov{animation:nv-hovB 10s infinite both}
 .nv-cursor{animation:nv-cursor 10s infinite both}.nv-cursor svg{animation:nv-press 10s infinite both}.nv-ring{animation:nv-ring 10s infinite both}
 }
-@keyframes nv-zoom{0.000%{transform:scale(1.9);animation-timing-function:cubic-bezier(.65,0,.35,1);}27.500%{transform:scale(1.9);animation-timing-function:cubic-bezier(.65,0,.35,1);}33.000%{transform:scale(1);animation-timing-function:cubic-bezier(.65,0,.35,1);}43.000%{transform:scale(1);animation-timing-function:cubic-bezier(.65,0,.35,1);}48.500%{transform:scale(1.9);animation-timing-function:cubic-bezier(.65,0,.35,1);}70.000%{transform:scale(1.9);animation-timing-function:cubic-bezier(.65,0,.35,1);}75.500%{transform:scale(1);animation-timing-function:cubic-bezier(.65,0,.35,1);}90.000%{transform:scale(1);animation-timing-function:cubic-bezier(.65,0,.35,1);}97.000%{transform:scale(1.9);animation-timing-function:cubic-bezier(.65,0,.35,1);}100.000%{transform:scale(1.9);animation-timing-function:cubic-bezier(.65,0,.35,1);}}
+@keyframes nv-zoom{0.000%{transform:scale(1.9);animation-timing-function:cubic-bezier(.65,0,.35,1);}27.500%{transform:scale(1.9);animation-timing-function:cubic-bezier(.65,0,.35,1);}33.000%{transform:scale(1);animation-timing-function:cubic-bezier(.65,0,.35,1);}94.000%{transform:scale(1);animation-timing-function:cubic-bezier(.65,0,.35,1);}100.000%{transform:scale(1.9);animation-timing-function:cubic-bezier(.65,0,.35,1);}}
 .nv-stage{position:absolute;inset:0;transform-origin:45.6% 14.7%}
 .nv-stage>img{position:absolute;inset:0;width:100%;height:100%;display:block}
+@keyframes nv-lo{0%{opacity:0}31%{opacity:0}33%{opacity:1}94%{opacity:1}95.5%{opacity:0}100%{opacity:0}}
+.nv-lo{position:absolute;inset:0;opacity:0;animation:nv-lo 10s infinite both}
+.nv-lo>img{position:absolute;inset:0;width:100%;height:100%;display:block}
 @media (prefers-reduced-motion:no-preference){.nv-stage{animation:nv-zoom 10s infinite both}}
 
 .rp-badge{display:inline-flex;align-items:center;gap:4px;border:1px solid #E1E3EA;border-radius:4px;background:#fff;font-family:Inter,system-ui,sans-serif;font-size:12px;line-height:16px;font-weight:600;color:#030B5D;font-feature-settings:"lnum" 1,"tnum" 1;white-space:nowrap;margin:0}
@@ -184,6 +187,7 @@ html{scroll-behavior:smooth}
         <div class="nv-stage">
         <img loading="lazy" decoding="async" src="assets/98cc7689.png" alt="" aria-hidden="true">
         <img loading="lazy" decoding="async" class="us" src="assets/3070eebd.png" alt="" aria-hidden="true">
+        <div class="nv-lo"><img loading="lazy" decoding="async" src="assets/9f59f644.png" alt="" aria-hidden="true"><img loading="lazy" decoding="async" class="us" src="assets/baf32e03.png" alt="" aria-hidden="true"></div>
         <div class="nv-menu mA" style="left:41.18%"><div class="it"><div class="hov"></div><span>United States (US1)</span></div><div class="it sel"><span>Ireland (IE1)</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" stroke="#0263E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><hr><div class="it lk"><span>Learn about regions</span></div></div>
         <div class="nv-menu mB" style="left:41.18%"><div class="it sel"><span>United States (US1)</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" stroke="#0263E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="it"><div class="hov"></div><span>Ireland (IE1)</span></div><hr><div class="it lk"><span>Learn about regions</span></div></div>
         <div class="nv-cursor" aria-hidden="true"><div class="nv-ring"></div><svg viewBox="0 0 20 24" fill="none"><path d="M2 1.5v18.2l4.6-4.4 3 6.8 3-1.3-3-6.7h6.4L2 1.5z" fill="#121C2D" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"></path></svg></div>
