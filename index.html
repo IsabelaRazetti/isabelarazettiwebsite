@@ -52,7 +52,7 @@ html{scroll-behavior:smooth}
   <section style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; padding: 140px 32px; box-sizing: border-box; text-align: center">
     <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E554A">Staff Product Designer · 10 years · B2B, SaaS &amp; dev tools</p>
     <h1 style="margin: 0; max-width: 1000px; font-weight: 600; font-size: clamp(40px, 5.2vw, 84px); line-height: 0.98; letter-spacing: -0.035em; text-wrap: balance">I turn messy problems into <span style="color: #B83D17">systems</span> other people can build on.</h1>
-    <p style="margin: 0; max-width: 460px; font-size: 18px; line-height: 1.55; color: #3A332B">Design systems, product strategy and cross-functional leadership for problems that cut across many teams.</p>
+    <p style="margin: 0; max-width: 460px; font-size: 18px; line-height: 1.55; color: #3A332B">Design systems, product strategy and cross-functional leadership — for problems that cut across many teams.</p>
   </section>
 
   <!-- Metrics -->
@@ -70,7 +70,7 @@ html{scroll-behavior:smooth}
     <h2 style="margin: 0 0 8px; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: #5E554A">Selected work</h2>
 
     <a class="work-item" href="twilio.html" style="text-decoration: none; color: #1F1B16; display: flex; flex-direction: column; align-items: center; gap: 8px">
-      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E554A">01 · 2022–2026 · Data residency</span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #5E554A">01 · 2025–2026 · Data residency</span>
       <span class="t" style="font-weight: 600; font-size: clamp(56px, 8vw, 200px); line-height: 0.9; letter-spacing: -0.03em; text-transform: uppercase">Twilio</span>
     </a>
     <a class="work-item" href="simply-business.html" style="text-decoration: none; color: #1F1B16; display: flex; flex-direction: column; align-items: center; gap: 8px">
@@ -142,5 +142,19 @@ html{scroll-behavior:smooth}
 
 </main>
 </div>
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)||!Element.prototype.getAnimations)return;
+  var els=document.querySelectorAll('.rg,.nv,.cch,.sch,.db,.sbd');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    var an=e.target.getAnimations({subtree:true});
+    if(e.isIntersecting){
+      if(!e.target._seen){e.target._seen=1;an.forEach(function(a){a.currentTime=0;});}
+      an.forEach(function(a){a.play();});
+    }else{an.forEach(function(a){a.pause();});}
+  });},{threshold:.4});
+  els.forEach(function(el){el.getAnimations({subtree:true}).forEach(function(a){a.pause();});io.observe(el);});
+})();
+</script>
 </body>
 </html>
